@@ -13,7 +13,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-        <link rel="stylesheet" href="estilo.css">
+        <link rel="stylesheet" href="style.css">
         <title>Página Inicial</title>
     </head>
     <body>
@@ -43,11 +43,11 @@
             </a>
             <ul class="dropdown-menu dropdown-menu-dark">
               <li><a class="dropdown-item" href="#">Sobre nós</a></li>
-              <li><a class="dropdown-item" href="#">Login</a></li>
+              <li><a class="dropdown-item" href="login.php">Login</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="#">Contato</a></li>
+              <li><a class="btn btn-danger" href="logout.php">Sair</a></li>
             </ul>
           </li>
         </ul>
@@ -59,18 +59,34 @@
     </div>
   </div>
     </nav>
-    </div>
-    <div class="container">
     <h1>Destaques</h1>
-                <div  class="card" style="width: 18rem;">
-                    <img src="img/asset-generation-fc12b65e-7fc6-4ee2-b139-16f3eb7d1ef4-1-watermarked.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">X-nunes</h5>
-                        <p class="card-text">Ingredientes: pão, tomate, alface, carne, maionese, molho caseiro da casa, queijo cheddar.</p>
-                        <a href="pedido.php" class="btn btn-primary">Faça seu pedido</a>
-                    </div>
-                    </div>
-                    </div>
+    <div class="card-group">
+  <div class="card">
+  <img id="lanche" src="img/asset-generation-fc12b65e-7fc6-4ee2-b139-16f3eb7d1ef4-1-watermarked.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">X-Nunes</h5>
+      <p class="card-text">Ingredientes: pão, tomate, alface, carne, maionese, molho caseiro da casa, queijo cheddar.</p>
+      <a href="pedido.php" class="btn btn-primary">Faça o seu pedido</a>
+    </div>
+  </div>
+  <div class="card">
+    <img id="lanche" src="img/Xsouza.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">X-Souza</h5>
+      <p class="card-text">O lanche favorito da galera, o X-Souza é um lanche especial do chefe recheado com: maionese, bacon, frango desfiado, carne de hambúrguer, tomate, alface, queijo cheddar e pão caseiro da casa.</p>
+      <a href="pedido.php" class="btn btn-primary">Faça o seu pedido</a>
+    </div>
+  </div>
+  <div class="card">
+    <img id="lanche" src="img/X-Dieimes" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">X-Dieimes</h5>
+      <p class="card-text">O lanche mais caro de todos, mas o que mais alivia sua fome apresentamos o X-Dieimes um dos melhores da casa que satisfaz a fome de um Excelente Aluno, ingredientes: pão caseiro da casa, queijo cheddar, carne, tomate, alface, maionese, ketchup, mostarda, molho caseiro. </p>
+      <a href="pedido.php" class="btn btn-primary">Faça o seu pedido</a>
+    </div>
+  </div>
+</div>
+      </div>
     </body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </html>

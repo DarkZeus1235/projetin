@@ -53,7 +53,7 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
       <input type="password" name="senha" placeholder="Senha" required>
       <input type="submit" value="Entrar">
     </form>
-    <p>Não tem uma conta? <a href="registro.php">Registre-se</a></p>
+    <p>Não tem uma conta? <a href="cadastro.php">Registre-se</a></p>
   </div>
 </body>
 </html>

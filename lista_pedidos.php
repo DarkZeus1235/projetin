@@ -1,6 +1,8 @@
     <?php
         include("conexao.php");
 
+        include("protect.php");
+
         $consultar_banco = "SELECT * FROM pedido";
 
         $retorno_consulta = $mysqli->query($consultar_banco) or die($mysqli->error);
