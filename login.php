@@ -40,6 +40,7 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
 }
 ?>
 <!DOCTYPE html>
+<html lang="pt-br">
 <html>
     <link rel="stylesheet" href="style.css">
 <head>

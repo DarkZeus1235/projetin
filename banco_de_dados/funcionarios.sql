@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Tempo de geração: 16-Maio-2023 às 23:20
+-- Tempo de geração: 16-Maio-2023 às 23:19
 -- Versão do servidor: 8.0.31
 -- versão do PHP: 8.0.26
 
@@ -24,28 +24,28 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `pedido`
+-- Estrutura da tabela `funcionarios`
 --
 
-DROP TABLE IF EXISTS `pedido`;
-CREATE TABLE IF NOT EXISTS `pedido` (
-  `id_pedido` int NOT NULL AUTO_INCREMENT,
-  `email` varchar(200) NOT NULL,
-  `senha` varchar(200) NOT NULL,
+DROP TABLE IF EXISTS `funcionarios`;
+CREATE TABLE IF NOT EXISTS `funcionarios` (
+  `id_funcionario` int NOT NULL AUTO_INCREMENT,
   `nome` varchar(100) NOT NULL,
-  `endereco` varchar(300) NOT NULL,
+  `endereco` varchar(100) NOT NULL,
   `telefone` varchar(100) NOT NULL,
-  `pedido` varchar(300) NOT NULL,
-  PRIMARY KEY (`id_pedido`)
-) ENGINE=MyISAM AUTO_INCREMENT=35 DEFAULT CHARSET=utf8mb3;
+  `cpf` varchar(100) NOT NULL,
+  `funcao` varchar(100) NOT NULL,
+  PRIMARY KEY (`id_funcionario`)
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- Extraindo dados da tabela `pedido`
+-- Extraindo dados da tabela `funcionarios`
 --
 
-INSERT INTO `pedido` (`id_pedido`, `email`, `senha`, `nome`, `endereco`, `telefone`, `pedido`) VALUES
-(31, 'administrador@hotmail.com', 'adm12345678', 'Usuario administrador', 'RUA RIO', '', ''),
-(27, '', '', 'JoÃ£o Pedro Fernandes de Almeida', 'Rua', '99999', 'coca');
+INSERT INTO `funcionarios` (`id_funcionario`, `nome`, `endereco`, `telefone`, `cpf`, `funcao`) VALUES
+(2, 'Dieimes Nunes', 'Rua Ceará 4365', '43 996543321', '', 'Chef de Cozinha'),
+(3, 'Dieimes Nunes', 'Rua Ceará 4365', '43 996543321', '', 'Chef de Cozinha'),
+(4, 'Dieimes Nunes', 'Rua Ceará 4365', '43 996543321', '1011111', 'Chef de Cozinha');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

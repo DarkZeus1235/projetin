@@ -34,15 +34,15 @@
                 </tr>
                 <tr>
                     <?php
-                        while($pedidos = $retorno_consulta -> fetch_assoc()){
+                        while($funcionarios = $retorno_consulta -> fetch_assoc()){
                        ?>
                        <tr>
-                        <td><?php echo $pedidos['nome'];?> </td>
-                        <td><?php echo $pedidos['endereco'];?> </td>
-                        <td><?php echo $pedidos['telefone'];?> </td>
-                        <td><?php echo $pedidos['cpf'];?> </td>
-                        <td><?php echo $pedidos['funcao'];?> </td>
-                        <td><a class="btn btn-danger" href="deletar_pedido.php?codigo_pedido=<?php echo $pedidos['id_funcionario']; ?>">Deletar</a></td>
+                        <td><?php echo $funcionarios['nome'];?> </td>
+                        <td><?php echo $funcionarios['endereco'];?> </td>
+                        <td><?php echo $funcionarios['telefone'];?> </td>
+                        <td><?php echo $funcionarios['cpf'];?> </td>
+                        <td><?php echo $funcionarios['funcao'];?> </td>
+                        <td><a class="btn btn-danger" href="deletar_func.php?codigo_pedido=<?php echo $funcionarios['id_funcionario']; ?>">Deletar</a></td>
                     </tr>
                     <?php
                     }
