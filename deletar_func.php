@@ -30,7 +30,6 @@
 
 <!DOCTYPE html>
 <html lang="pt-br">
-
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -42,7 +41,7 @@
     <body>
         <div class="container">
             <h1>Tela de Exclusão de Funcionários - Buteco do Nunes</h1>
-            <h1>ID do funcionário: <?php echo $pedido['id_funcionario']?></h1>
+            <h1>ID do funcionário: <?php echo $pedido['id_funcionario"']?></h1>
             <p>Nome do Funcionário: <?php echo $pedido['nome']?></p>
             <p>Endereço do Funcionário: <?php echo $pedido['endereco']?></p>
             <p>Telefone do Funcionário: <?php echo $pedido['telefone']?></p>
