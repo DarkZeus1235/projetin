@@ -47,6 +47,7 @@
               <li>
                 <hr class="dropdown-divider">
               </li>
+              <li><a class="btn btn-warning" href="cadastrar_func.php">Funcionários</a></li>
               <li><a class="btn btn-danger" href="logout.php">Sair</a></li>
             </ul>
           </li>
