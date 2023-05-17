@@ -17,6 +17,9 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
 
         $quantidade = $sql_query->num_rows;
 
+        $_SESSION['loggedin'] = true;
+        $_SESSION['username'] = $username;
+
         if($quantidade == 1){
 
             $usuario = $sql_query->fetch_assoc();
