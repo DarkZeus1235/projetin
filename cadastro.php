@@ -9,7 +9,7 @@
             $telefone = $_POST['bt_telefone'];
             $endereco = $_POST['bt_endereco'];
             /*----------------------------------*/
-            $mysqli -> query("INSERT INTO pedido (email, senha, nome, endereco, telefone) values('$nome', '$endereco', '$telefone', '$email', '$senha')") or
+            $mysqli -> query("INSERT INTO cadastro (email, senha, nome, endereco, telefone) values('$email', '$senha', '$nome', '$telefone', '$endereco')") or
             die ($mysqli->error);
 
             if(isset($_POST['nome']) || isset($_POST['endereco'])) {
@@ -34,7 +34,7 @@
 <body>
   <div class="signup-container">
     <h2>Cadastro</h2>
-    <form action="login.php" method="post">
+    <form action="cadastro.php" method="post">
     <input type="email" name="bt_email" placeholder="Email" required>
       <input type="password" name="bt_senha" placeholder="Senha" required>
       <input type="text" name="bt_nome" placeholder="Nome completo" required>

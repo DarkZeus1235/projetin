@@ -12,13 +12,10 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
         $email = $mysqli->real_escape_string($_POST['email']);
         $senha = $mysqli->real_escape_string($_POST['senha']);
 
-        $sql_code = "SELECT * FROM pedido WHERE email = '$email' AND senha = '$senha'";
+        $sql_code = "SELECT * FROM cadastro WHERE email = '$email' AND senha = '$senha'";
         $sql_query = $mysqli->query($sql_code) or die("Falha na execução do código SQL" . $mysqli->error);
 
         $quantidade = $sql_query->num_rows;
-
-        $_SESSION['loggedin'] = true;
-        $_SESSION['username'] = $username;
 
         if($quantidade == 1){
 
