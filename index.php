@@ -59,7 +59,7 @@
       </div>
     </div>
   </div>
-    </nav>
+      </nav>
     <h1>Destaques</h1>
     <div class="card-group">
   <div class="card">
