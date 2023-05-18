@@ -41,6 +41,7 @@
       <input type="text" name="bt_telefone" placeholder="Telefone" required>
       <input type="text" name="bt_endereco" placeholder="Endereço" required>
       <input type="submit" value="Cadastrar">
+      <p>Já tem uma conta? <a href="login.php">Entrar</a></p>
     </form>
   </div>
 </body>
