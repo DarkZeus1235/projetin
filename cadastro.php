@@ -4,7 +4,7 @@
         if(isset($_POST['bt_nome'])){
             /*----------------------------------*/
             $email = $_POST['bt_email'];
-            $senha - $_POST['bt_senha'];
+            $senha = $_POST['bt_senha'];
             $nome = $_POST['bt_nome'];
             $telefone = $_POST['bt_telefone'];
             $endereco = $_POST['bt_endereco'];
@@ -33,7 +33,7 @@
 </head>
 <body>
   <div class="signup-container">
-    <h2>Cadastro</h2>
+    <h2>Cadastro Cliente</h2>
     <form action="cadastro.php" method="post">
     <input type="email" name="bt_email" placeholder="Email" required>
       <input type="password" name="bt_senha" placeholder="Senha" required>
