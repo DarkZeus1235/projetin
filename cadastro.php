@@ -28,7 +28,7 @@
 <html lang="pt-br">
 <html>
 <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
   <title>Página de Cadastro</title>
 </head>
 <body>
