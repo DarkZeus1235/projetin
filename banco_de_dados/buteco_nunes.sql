@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Tempo de geração: 18-Maio-2023 às 14:41
+-- Tempo de geração: 18-Maio-2023 às 17:24
 -- Versão do servidor: 5.7.36
 -- versão do PHP: 7.4.26
 
@@ -38,14 +38,17 @@ CREATE TABLE IF NOT EXISTS `cadastro` (
   `telefone` varchar(100) NOT NULL,
   `endereco` varchar(100) NOT NULL,
   PRIMARY KEY (`id_login`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 --
 -- Extraindo dados da tabela `cadastro`
 --
 
 INSERT INTO `cadastro` (`id_login`, `email`, `senha`, `nome`, `telefone`, `endereco`) VALUES
-(1, 'administrador@hotmail.com', 'adm12345', 'administrador', '43 99615', 'Rua Rio Avenida Zanoni');
+(1, 'administrador@hotmail.com', 'adm12345', 'administrador', '43 99615', 'Rua Rio Avenida Zanoni'),
+(2, 'dieimes@dieimes', 'dieimes123', 'Dieimes Nunes', 'Avenida Brasil', '99875311'),
+(4, 'dieimes@hotmail.com', 'dieimes123', 'Dieimes Nunes', 'Avenida Brasil', '99875311'),
+(5, 'joaquim@sagionetti', 'joaquim123', 'Joaquim Pedro', 'Avenida Brasil', '99875311');
 
 -- --------------------------------------------------------
 
@@ -71,6 +74,29 @@ CREATE TABLE IF NOT EXISTS `funcionarios` (
 INSERT INTO `funcionarios` (`id_funcionario`, `nome`, `endereco`, `telefone`, `cpf`, `funcao`) VALUES
 (1, 'Dieimes Nunes', 'Rua Ceará 4765', '44 9996425', '12354687', 'Chef de Cozinha'),
 (2, 'JoÃ£o Pedro Fernandes de Almeida', 'Avenida Brasil', '99875311', '12345678', 'GarÃ§om');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `lanches`
+--
+
+DROP TABLE IF EXISTS `lanches`;
+CREATE TABLE IF NOT EXISTS `lanches` (
+  `id_lanche` int(100) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(100) NOT NULL,
+  `ingredientes` varchar(100) NOT NULL,
+  `quantidade` varchar(1000) NOT NULL,
+  `valor` varchar(100) NOT NULL,
+  PRIMARY KEY (`id_lanche`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+
+--
+-- Extraindo dados da tabela `lanches`
+--
+
+INSERT INTO `lanches` (`id_lanche`, `nome`, `ingredientes`, `quantidade`, `valor`) VALUES
+(1, 'X-Nunes', 'Pão, alface, tomate, carne, queijo cheddar, molho caseiro', '10', 'R$100');
 
 -- --------------------------------------------------------
 
