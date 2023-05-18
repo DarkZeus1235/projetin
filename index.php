@@ -43,7 +43,7 @@
             </a>
             <ul class="dropdown-menu dropdown-menu-dark">
               <li><a class="dropdown-item" href="#">Sobre nós</a></li>
-              <li><a class="dropdown-item" href="login.php">Login</a></li>
+              <li><a class="dropdown-item" href="cadastro.php">Crie sua Conta</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
