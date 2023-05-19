@@ -79,7 +79,7 @@
     </div>
   </div>
   <div class="card">
-    <img id="lanche" src="img/X-Dieimes.jpg" class="card-img-top" alt="...">
+  <img id="lanche" src="img/Xsouza.jpg" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">X-Dieimes</h5>
       <p class="card-text">O lanche mais caro de todos, mas o que mais alivia sua fome apresentamos o X-Dieimes um dos melhores da casa que satisfaz a fome de um Excelente Aluno, ingredientes: pão caseiro da casa, queijo cheddar, carne, tomate, alface, maionese, ketchup, mostarda, molho caseiro. </p>
