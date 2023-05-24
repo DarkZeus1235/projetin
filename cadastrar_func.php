@@ -3,6 +3,7 @@
 
     include('protect.php');
 
+
     if(isset($_POST['bt_nome'])){
         /*----------------------------------*/
         $nome = $_POST['bt_nome'];
@@ -21,6 +22,7 @@
 
         if(($_POST['endereco']) == 1){
             echo("Parabéns você está logado");
+
         }    
         }
     }

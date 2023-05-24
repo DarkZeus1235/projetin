@@ -77,8 +77,7 @@
                     <input class="btn btn-success" type="submit" value="Pedir">
                     <a class="btn btn-danger" href="index.php">Cancelar</a>
                     <?php
-                        if(isset($_SESSION['loggedin'])){
-                            echo "Teste";
+                        if(isset($_SESSION['nome'])){
                     ?>
                         
                         <a class="btn btn-primary" href="lista_pedidos.php">Pedidos</a>
