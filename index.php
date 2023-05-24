@@ -97,7 +97,7 @@ $quantidade_pedidos = $retorno_consulta->num_rows;
     <h1>Destaques</h1>
     <div class="card-group">
       <div class="card">
-        <img id="lanche" src="img/asset-generation-fc12b65e-7fc6-4ee2-b139-16f3eb7d1ef4-1-watermarked.jpg" class="card-img-top" alt="...">
+        <img  src="img/asset-generation-fc12b65e-7fc6-4ee2-b139-16f3eb7d1ef4-1-watermarked.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">X-Nunes</h5>
           <p class="card-text">Ingredientes: pão, tomate, alface, carne, maionese, molho caseiro da casa, queijo cheddar.</p>
@@ -120,22 +120,6 @@ $quantidade_pedidos = $retorno_consulta->num_rows;
           <a href="pedido.php" class="btn btn-primary">Faça o seu pedido</a>
         </div>
       </div>
-      <?php
-      while ($pedidos = $retorno_consulta->fetch_assoc()) {
-      ?>
-        <div class="card">
-          <img src="img/hamburguer-queijo-com-ilustracao-do-icone-do-vetor-dos-desenhos-animados-do-fogo-conceito-de-icone-de-objeto-de-comida-isolado-premium_138676-5539.avif">
-          <h5 class="card-title"><?php echo $pedidos['nome']; ?></h5>
-          <p class="card-text"><?php echo $pedidos['descricao']; ?></p>
-          <?php echo $pedidos['quantidade']; ?>
-          <?php echo $pedidos['valor']; ?>
-
-        </div>
-      <?php
-      }
-
-
-      ?>
     </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
