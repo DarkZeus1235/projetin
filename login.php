@@ -44,6 +44,7 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
 <html>
     <link rel="stylesheet" href="css/style.css">
 <head>
+<link rel="icon" href="img/hamburguer-queijo-com-ilustracao-do-icone-do-vetor-dos-desenhos-animados-do-fogo-conceito-de-icone-de-objeto-de-comida-isolado-premium_138676-5539.avif">
   <title>Página de Login</title>
 </head>
 <body>

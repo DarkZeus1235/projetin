@@ -29,7 +29,8 @@
 <html>
 <head>
     <link rel="stylesheet" href="css/style.css">
-  <title>Página de Cadastro</title>
+    <link rel="icon" href="img/hamburguer-queijo-com-ilustracao-do-icone-do-vetor-dos-desenhos-animados-do-fogo-conceito-de-icone-de-objeto-de-comida-isolado-premium_138676-5539.avif">
+    <title>Página de Cadastro</title>
 </head>
 <body>
   <div class="signup-container">
