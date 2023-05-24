@@ -1,6 +1,10 @@
 <?php
         include('conexao.php');
 
+        if(!isset($_SESSION)){
+            session_start();
+        }
+
         if(isset($_POST['bt_nome'])){
             /*----------------------------------*/
             $nome = $_POST['bt_nome'];
@@ -11,6 +15,14 @@
             $mysqli -> query("INSERT INTO pedido (nome, endereco, telefone, pedido) values('$nome', '$endereco', '$telefone', '$pedido')") or
             die ($mysqli->error);
 
+            $_SESSION['Sucesso'] = '<div class="alert alert-success" role="alert">
+                                        Pedido realizado com sucesso. :)
+                                    </div>';
+            
+
+            
+            /*
+           
             if(isset($_POST['nome']) || isset($_POST['endereco'])) {
 
             if(($_POST['nome']) == 1){
@@ -20,8 +32,10 @@
                 echo("Parabéns você está logado");
             }    
             }
+
+            */
         }
-    }
+    
     ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -54,9 +68,25 @@
                         <label for="">Seu pedido:</label>
                         <input name="bt_pedido" type="text" class="form-control">
                     </div>
+                    <?php
+                        if(isset($_SESSION['Sucesso'])){
+                            echo $_SESSION['Sucesso'];
+                            unset($_SESSION['Sucesso']);
+                        }
+                    ?>
                     <input class="btn btn-success" type="submit" value="Pedir">
                     <a class="btn btn-danger" href="index.php">Cancelar</a>
-                    <a class="btn btn-primary" href="lista_pedidos.php">Pedidos</a>
+                    <?php
+                        if(isset($_SESSION['loggedin'])){
+                            echo "Teste";
+                    ?>
+                        
+                        <a class="btn btn-primary" href="lista_pedidos.php">Pedidos</a>
+                    <?php
+
+                        }
+                    ?>
+                    
                     </form>
                 </div>
             </form>
