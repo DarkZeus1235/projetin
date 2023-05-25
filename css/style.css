@@ -105,3 +105,7 @@
     .signup-container input[type="submit"]:hover {
       background-color: #45a049;
     }
+
+    .combo1{
+      height: 300px;
+    }

@@ -42,7 +42,7 @@ $quantidade_pedidos = $retorno_consulta->num_rows;
                 <a class="nav-link active" aria-current="page" href="#">Início</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Combos</a>
+                <a class="nav-link" href="combos.php">Combos</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -113,7 +113,7 @@ $quantidade_pedidos = $retorno_consulta->num_rows;
         </div>
       </div>
       <div class="card">
-        <img id="lanche" src="img/X-Dieimes.jpg" class="card-img-top" alt="...">
+        <img id="lanche" src="img/hamburguer-queijo-com-ilustracao-do-icone-do-vetor-dos-desenhos-animados-do-fogo-conceito-de-icone-de-objeto-de-comida-isolado-premium_138676-5539.avif" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">X-Dieimes</h5>
           <p class="card-text">O lanche mais caro de todos, mas o que mais alivia sua fome apresentamos o X-Dieimes um dos melhores da casa que satisfaz a fome de um Excelente Aluno, ingredientes: pão caseiro da casa, queijo cheddar, carne, tomate, alface, maionese, ketchup, mostarda, molho caseiro. </p>
